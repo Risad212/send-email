@@ -23,19 +23,19 @@ app.post('/send', (req, res) => {
   async function main() {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
+      host: "host",
       port: 465,
       secure: true, // true for 465, false for other ports
       auth: {
-        user: 'info@bdemail24.com', // generated ethereal user
-        pass: 'fgvwnyrnzddwgint', // generated ethereal password
+        user: 'user name', // generated ethereal user
+        pass: 'password', // generated ethereal password
       },
     });
 
     // send mail with defined transport object
     await transporter.sendMail({
       from: email, // sender address
-      to: "hafez.risad@gmail.com", // list of receivers
+      to: "sener email", // list of receivers
       html: `
              <h3>name: ${name}</h3>        
              <h3>message: ${message}</h3>

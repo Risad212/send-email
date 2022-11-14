@@ -1,0 +1,14 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/bdemail24/public_html/formapi"
+PassengerBaseURI "/"
+PassengerNodejs "/home/bdemail24/nodevenv/public_html/formapi/14/bin/node"
+PassengerAppType node
+PassengerStartupFile server.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^formapi\.bdemail24\.com$
+RewriteRule ^/?$ "http\:\/\/formapi\.bdemail24\.com\/" [R=301,L]
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END

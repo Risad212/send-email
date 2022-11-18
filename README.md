@@ -3,6 +3,13 @@
 
 node.js project with nodemailer for send email with smtp configuration deploy in cpanel
 
+for start this project you need to install
+
+1 express
+2 cors
+3 body-perser
+4 nodemailer
+5 env for save secret
 
 
 #Example

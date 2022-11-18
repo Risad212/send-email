@@ -18,7 +18,7 @@ const nodemailer = require("nodemailer");
 app.use(cors())
 app.use(bodyParser.json())
 
-//-------------------------------------------------
+
 app.post('/send', (req, res) => {
   const { name, email, message } = req.body; get data from front end
   async function main() {
@@ -63,7 +63,7 @@ app.post('/send', (req, res) => {
   return res.json()
 })
 
-//-------------------------------------------
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

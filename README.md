@@ -1,4 +1,4 @@
-# nodeApiCpanel 
+# sendEmail
 #SMTP configuration
 
 node.js project with nodemailer for send email with smtp configuration deploy in cpanel

@@ -30,21 +30,17 @@ app.post('/send', (req, res) => {
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: "mail.bdemail24.com",
-    port: 465,
-    // secure: true,
-    // service: 'gmail',
+    host: "", // host get from cpanel
+    port: , // port get from cpanel
      auth: {
-      user: 'info@bdemail24.com', // generated ethereal user
-      pass: 'WN=;+n[[yf{z', // generated ethereal password
-    //   user: 'mdresad704@gmail.com', // generated ethereal user
-    //   pass: 'fgvwnyrnzddwgint', // generated ethereal password
+      user: '', // generated ethereal user
+      pass: '', // generated ethereal password
     },
   });
 
   let info = await transporter.sendMail({
-    from: 'mdresad704@gmail.com', // sender address
-    to: "hafez.risad@gmail.com", // list of receivers
+    from: 'sender@gmail.com', // sender address
+    to: "reciever@gmail.com", // list of receivers
     subject: "Aliance ✔", // Subject line
     text: "Hello world?",
      html: `sending email successfully`,
